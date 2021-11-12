@@ -26,6 +26,9 @@ body{
     background: #008A93;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    transition: top .3s;
 }
 
 .header-container{
@@ -57,7 +60,7 @@ body{
 
 .hero {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -108,9 +111,12 @@ body{
 }
 
 .projects-title {
+    width: fit-content;
     margin: 7px;
+    padding-bottom: 3px;
     font-size: 1.3rem;
     color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .project {
@@ -122,6 +128,7 @@ body{
 .projects-detail {
     width: 100%;
     height: 10%;
+    padding-left: 7px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -143,4 +150,63 @@ body{
     padding: 6px;
     background: #008A93;
     border-radius: 10px;
+}
+
+.contact {
+    width: 100%;
+    height: 180px;
+    background: #03305A;
+    color: #fff;
+    display: flex;
+    justify-content: center;   
+}
+
+.contact-container {
+    width: 80%;
+    padding: 20px 15px;
+
+}
+
+.contact-title {
+    width: fit-content;
+    margin: 7px;
+    padding-bottom: 3px;
+    font-size: 1.3rem;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.contact-wrapper {
+    height: 60%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-social {
+    display: flex;
+    align-items: center;
+}
+
+.mail-text, .social-text, .email {
+    font-size: 1.2rem;
+}
+
+.email{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.linkedin-link {
+    padding-left: 10px;
+    color: #fff;
+}
+
+/* animations classes */
+
+.hideNav {
+    top: -60px;
 }
