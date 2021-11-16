@@ -6,7 +6,13 @@
                         "azul oscuro": #03305A
                         
 */
-/* Color del background -> #E7E7DD */
+/*
+Color del background -> #E7E7DD
+Color del navbar -> #008a93
+Color de proyectos -> #00597d
+color de los proyectos -> #adadad30
+Color de contacto -> #033065a
+*/
 
 
 * {
@@ -20,6 +26,7 @@ body{
     background: #E7E7DD;
 }
 
+/* cabecera / navbar */
 .header {
     width: 100%;
     height: 60px;
@@ -85,6 +92,7 @@ body{
     color: #fff;
 }
 
+/* acerca */
 .hero {
     width: 100%;
     height: 100vh;
@@ -115,6 +123,8 @@ body{
     margin-bottom: 6.5px;
     font-size: 1.5rem;
 }
+
+/* proyectos */
 
 .projects {
     width: 100%;
@@ -153,25 +163,67 @@ body{
     background-position: center;
     background-size: cover;
     color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0 #2d2d2d;
+}
+
+.project-hide-content {
+    width: 100%;
+    height: 100%;
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: .5s;
 }
+
+
 
 .project-text {
     padding: 10px;
-    background: #adadad30;
-    border-radius: 5px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.project-description {
+    padding: 10px;
+    opacity: 0;
+    transition: .5s;
 }
 
 .project-link {
     text-decoration: none;
     padding: 10px;
-    background: #adadad30;
-    border-radius: 5px;
     color: #fff;
-    display: none;
+    background: #fff3;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.project-link:hover {
+    color: #008A93;
+}
+
+.project-hide-content:hover {
+    background: #adadad30;
+    transition: .5s;
+}
+
+.project-hide-content:hover .project-text {
+    opacity: 1;
+    transition: .5s;
+}
+
+.project-hide-content:hover .project-description {
+    opacity: 1;
+    transition: .5s;
+}
+
+.project-hide-content:hover .project-link {
+    opacity: 1;
+    transition: .5s;
 }
 
 .projects-detail {
@@ -210,6 +262,7 @@ body{
     justify-content: center;   
 }
 
+/* contacto */
 .contact-container {
     width: 80%;
     padding: 20px 15px;
@@ -255,15 +308,6 @@ body{
 }
 
 /* animations classes */
-
 .hideNav {
     top: -60px;
-}
-
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
 }
