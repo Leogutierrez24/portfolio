@@ -240,14 +240,15 @@ body{
 }
 
 .techs {
-    width: 40%;
-    height: 50px;
+    width: 100%;
+    height: fit-content;
     display: inherit;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .technology {
+    margin: 0 0 .625rem .625rem;
     padding: 6px;
     background: #008A93;
     border-radius: 10px;
@@ -310,4 +311,38 @@ body{
 /* animations classes */
 .hideNav {
     top: -60px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px){
+    .hero-container {
+        width: 90%;
+    }
+
+    .projects-container {
+        width: 90%;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .hero-container {
+        width: 100%;
+    }
+
+    .projects-container {
+        width: 100%;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
 }
