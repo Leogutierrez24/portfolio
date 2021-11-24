@@ -356,17 +356,19 @@ body{
     justify-content: center;
 }
 
-.close-btn {
-    width: 1rem;
-    height: 1rem;
-    padding: 3px;
-    cursor: pointer;
-    position: relative;
-    left: 95%;
+.close-menu-btn {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn:active {
+    background: #000;
 }
 
 .mobile-link {
-    padding: 1rem 1rem 1rem 2.25rem ;
+    padding: 1rem 1rem 1rem 2.25rem;
     text-decoration: none;
     color: #fff;
 }
