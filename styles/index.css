@@ -348,7 +348,7 @@ body{
 }
 
 .mobile-nav {
-    height: 200px;
+    height: fit-content;
     background: #008a93;
     color: #fff;
     display: flex;
@@ -444,6 +444,25 @@ body{
     }
 }
 
+@media screen and (max-width: 580px) {
+    .contact-wrapper {
+        height: fit-content;
+    }
+
+    .mail-text {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .email {
+        padding: 0;
+    }
+
+    .contact-social {
+        padding-top: 5px;
+    }
+}
+
 @media screen and (max-width: 425px){
     .hero-container {
         width: 100%;
@@ -453,7 +472,59 @@ body{
         width: 100%;
     }
 
+    .project-hide-content {
+        background: #adadad30;
+    }
+
+    .project-text {
+        opacity: 1;
+    }
+    
+    .project-description {
+        opacity: 1;
+    }
+    
+    .project-link {
+        opacity: 1;
+    }
+
     .contact-container {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .projects-title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .project-description {
+        text-align: center;
+    }
+
+    .contact-title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .contact-wrapper {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-container {
+        padding: 20px 7.5px;
+    }
+
+    .projects-container {
+        padding: 20px 7.5px;
+    }
+
+    .contact-container {
+        padding: 20px 7.5px;
     }
 }
